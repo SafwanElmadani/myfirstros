@@ -2,8 +2,9 @@
 
     <arg name="topic" default="/chatter" />
 
-    <node pkg= "babyros" name="talker" type="talker"/>
-    <node pkg= "babyros" name= "listener" type="listener"/>
+    <node pkg= "myfirstros" name="talker" type="talker"/>
+    <node pkg= "myfirstros" name= "listener" type="listener"/>
+
     <node pkg= "rosbag" name="record" type="record" output="screen" args=" -O /home/safwan/Documents/REU2020/babyROS/catkin_ws/bagtest $(arg topic)" />
 
 
